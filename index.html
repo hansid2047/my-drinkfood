@@ -441,9 +441,9 @@ const S = {
 };
 
 // Common options
-const SIZES  = ["小杯","中杯","大杯","特大杯"];
-const ICES   = ["熱飲","去冰","微冰","少冰","半冰","多冰","正常冰"];
-const SUGARS = ["無糖","1分糖","3分糖","5分糖","7分糖","全糖"];
+const SIZES  = ["無飲料/點餐","小杯","中杯","大杯","特大杯"];
+const ICES   = ["無飲料/點餐","熱飲","去冰","微冰","少冰","半冰","多冰","正常冰"];
+const SUGARS = ["無飲料/點餐","無糖","1分糖","3分糖","5分糖","7分糖","全糖"];
 
 // ── Data ──────────────────────────────────────────────
 async function loadSessions() {
@@ -633,7 +633,7 @@ function screenOrderForm() {
       </div>
 
       <div class="form-group">
-        <label class="lbl">備註</label>
+        <label class="lbl">備註:加料/分機號碼/其他特殊需求</label>
         <input type="text" id="o_note" placeholder="例：去奶、加椰果…" value="${esc(f.note)}" oninput="S.orderForm.note=this.value">
       </div>
 
