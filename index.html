@@ -529,14 +529,14 @@ const S = {
     ice: "少冰",
     sugar: "7分糖",
     drinkTopping: "",   // 加料/配料
-    drinkSugarNote: "", // 甜度特殊備註
+    drinkSugarNote: "", // 特殊備註-非必要勿填
     drinkOther: "",     // 其他飲料備註
     // 餐點
     wantFood: false,
     food: "",
     foodQty: "1",       // 數量
     foodCombo: "",      // 套餐說明
-    foodSpecial: "",    // 特殊需求/客製化
+    foodSpecial: "",    // 特殊需求/客製化-非必要勿填
     // 共通
     ext: "",            // 分機號碼
     commonNote: "",     // 其他備註
@@ -771,7 +771,7 @@ function screenOrderForm() {
               <input type="text" placeholder="例：珍珠、椰果、布丁…" value="${esc(f.drinkTopping)}" oninput="S.orderForm.drinkTopping=this.value">
             </div>
             <div class="note-field form-group">
-              <label class="lbl">甜度特殊備註</label>
+              <label class="lbl">特殊備註-非必要勿填</label>
               <input type="text" placeholder="例：甜度比 7 分再少一些…" value="${esc(f.drinkSugarNote)}" oninput="S.orderForm.drinkSugarNote=this.value">
             </div>
             <div class="note-field form-group" style="grid-column:1/-1">
@@ -807,7 +807,7 @@ function screenOrderForm() {
               <input type="text" placeholder="例：配薯條、換沙拉…" value="${esc(f.foodCombo)}" oninput="S.orderForm.foodCombo=this.value">
             </div>
             <div class="note-field form-group">
-              <label class="lbl">特殊需求 / 客製化</label>
+              <label class="lbl">特殊需求 / 客製化-非必要勿填</label>
               <input type="text" placeholder="例：不要香菜、少辣…" value="${esc(f.foodSpecial)}" oninput="S.orderForm.foodSpecial=this.value">
             </div>
           </div>
